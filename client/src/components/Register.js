@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import avatar from '../assets/profile.png';
 import toast, { Toaster } from 'react-hot-toast';
@@ -54,7 +54,7 @@ export default function Register() {
           <div className="title flex flex-col items-center">
             <h4 className='text-5xl font-bold'>Register</h4>
             <span className='py-4 text-xl w-2/3 text-center text-gray-500'>
-                Happy to join you!
+                Click below to add your profile image !
             </span>
           </div>
 
@@ -75,7 +75,7 @@ export default function Register() {
               </div>
 
               <div className="text-center py-4">
-                <span className='text-gray-500'>Already Register? <Link className='text-red-500' to="/">Login Now</Link></span>
+                <span className='text-gray-500'>Already Registered? <Link className='text-red-500' to="/">Login Now</Link></span>
               </div>
 
           </form>
