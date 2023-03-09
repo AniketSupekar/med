@@ -9,7 +9,10 @@ import Profile from './components/Profile';
 import Recovery from './components/Recovery';
 import Reset from './components/Reset';
 import PageNotFound from './components/PageNotFound';
-
+import AddPatient from './components/AddPatient';
+import Personal_Information_form from './components/PersonalInfo';
+import Blood_Test_form from './components/BTForm';
+import X_Ray_form from './components/XRayForm';
 
 /** auth middleware */
 import { AuthorizeUser, ProtectRoute } from './middleware/auth'
@@ -39,6 +42,22 @@ const router = createBrowserRouter([
     {
         path : '/reset',
         element : <Reset></Reset>
+    },
+    {
+        path : '/AddPatient',
+        element : <AddPatient></AddPatient>
+    },
+    {
+        path : '/Personal_Information_form',
+        element : <Personal_Information_form></Personal_Information_form>
+    },
+    {
+        path : '/Blood_Test_form',
+        element : <Blood_Test_form></Blood_Test_form>
+    },
+    {
+        path : '/X_Ray_form',
+        element : <X_Ray_form></X_Ray_form>
     },
     {
         path : '*',
